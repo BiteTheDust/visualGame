@@ -1,0 +1,110 @@
+<!--Firefox-->
+<html>
+<head>
+<title>Client's Bizarre Adventure</title>
+<button id = "help" align = "right" style="height:25px;width:50px"><font size = "2">Help</font></button>
+<!--<button id = "inv" align = "center" style="height:25px;width:75px"><font size = "2">Inventory</font></button> -->
+<button id = "hp" align = "left" style = "height:25px;width:75px"><font size = "2">Health</font></button>
+<h1 align = "center">Client's Bizarre Adventure!</h1>
+<script src = "visualGame.js">
+// funtion that runs on page load and adds '*' to the random cell of the grid
+
+</script>
+</head>
+<body onload="load()">
+<table id="grid" border="1" cellspacing="0" cellpadding="0" align = "center" bgcolor = "black">
+<tr id="0">
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+</tr>
+<tr>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+</tr>
+<tr>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+</tr>
+<tr>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+</tr>
+<tr>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+</tr>
+<tr>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+</tr>
+<tr>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+</tr>
+<tr>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+<td width="30" height="30"></td>
+</tr>
+</table>
+
+<div><h2 align = "center">Which way would you like to go?</h2></div>
+<table align = "center">
+<tr><td align="center" colspan="2"><input type="button" value="UP" onclick="updateGrid(this.value)"><br><br></td></tr>
+<tr><td><input type="button" value="LEFT" onclick="updateGrid(this.value)"></td><td><input type="button" value="RIGHT" onclick="updateGrid(this.value)"></td></tr>
+<tr><td align="center" colspan="2"><br><input type="button" value="DOWN" onclick="updateGrid(this.value)"></td></tr>
+</table>
+<p id = "status"> This is where your status will be displayed after each turn. </p>
+<p id = "exception"></p>
+<!-- Hold the current values of row and col of the '*' -->
+<input type="hidden" id="rowValue" value="">
+<input type="hidden" id="colValue" value="" ="">
+</body>
+</html>
